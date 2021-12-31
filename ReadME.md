@@ -1,9 +1,9 @@
 
-# **Scott**
-[object Object].GNU GPLv3
+# **ReadME**
+ ![License: 'Apache License 2.0'](https://img.shields.io/badge/License-Apache%20License%202.0-red)
  -------------------------------
 ## Description 
-  Sessions
+  It is good
 
 ## Table of Contents:
   * [Installation](#installation)
@@ -14,13 +14,13 @@
   * [Questions](#questions)
  --------------------------------- 
 ## Installation
-  a;ldkfjal;kdfj
+  Sure do
 
 ## Usage
-  a;lkdfja;lskdfjalk;
+  works great
 
-## License
-  [object Object].GNU GPLv3
+## License Details:
+ !['Link to Apache License 2.0 Details'](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Contributing
   undefined
@@ -30,5 +30,5 @@
 
  ---------------------------------
 ### Questions
-* Github Profile: https://github.com/a;slkdjfkla;
-* Contact me with questions: as;dlkfj
+* Github Profile: https://github.com/n
+* Contact me with questions: serion

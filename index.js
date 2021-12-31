@@ -77,12 +77,20 @@ const promptQuestions = () => {
     {
       type: 'checkbox',
       name: 'license',
-      message: 'Which license applies to your project?',
+      message: 'Which license applies to your project? Select One',
       choices: ['GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense'],
       when: ({ confirmLicense }) => {
         if (confirmLicense) {
           return true;
         } else {
+          return false;
+        }
+      },
+      validate: licenseInput => {
+        if (licenseInput) {
+          return true;
+        } else {
+          console.log('Pick License to continue:');
           return false;
         }
       }
@@ -101,6 +109,14 @@ const promptQuestions = () => {
         if (confirmContributors) {
           return true;
         } else {
+          return false;
+        }
+      },
+      validate: contributorInput => {
+        if (contributorInput) {
+          return true;
+        } else {
+          console.log('Add contributors to continue:');
           return false;
         }
       }
@@ -122,6 +138,14 @@ const promptQuestions = () => {
           return false;
         }
       },
+      validate: testInput => {
+        if (testInput) {
+          return true;
+        } else {
+          console.log('Add testing details to continue:');
+          return false;
+        }
+      }
     },
     {
       type: 'input',

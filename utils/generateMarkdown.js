@@ -35,7 +35,7 @@ module.exports = data => {
   
   return `
 # **${data.title}**
- ${data.license}
+ ${licenseBadge[data.license]}
  -------------------------------
 ## Description 
   ${data.description}
@@ -54,8 +54,8 @@ module.exports = data => {
 ## Usage
   ${data.usage}
 
-## License
-  ${data.license}
+## License Details:
+ ${licenseLink[data.license]}
 
 ## Contributing
   ${data.contributing}
