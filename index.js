@@ -154,20 +154,13 @@ const promptQuestions = () => {
 };
 
 // // TODO: Create a function to write README file
-// const writeToFile = (fileName, data) => {
-//   fs.writeFile('./README.md', generateMarkdown, err => {
-//     if (err) {}
-//   } )
-// }
-
 // // Function call to initialize app
 promptQuestions()
-  .then(readMeData => {
-    const pageMD = generateMarkdown(readMeData);
-    
-    // fs.writeFile('./ReadME.md', pageMD, err => {
-    //   if (err) throw err;
+  .then((data) => {
+    const pageMD = generateMarkdown(data);
+    fs.writeFile('./ReadME.md', pageMD, err => {
+      if (err) throw err;
 
-    //   console.log('ReadME complete! Check out ReadME.md to see the output!')
-    // });
+      console.log('ReadME complete! Check out ReadME.md to see the output!')
+    });
   });
