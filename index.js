@@ -25,12 +25,12 @@ const promptQuestions = () => {
     {
       type: 'input',
       name: 'title',
-      message: 'What is the project title? (Required)',
+      message: 'Please provide the project title:',
       validate: titleInput => {
         if (titleInput) {
           return true;
         } else {
-          console.log('please enter a title to continue.');
+          console.log('Enter a title to continue:');
           return false;
         }
       }
@@ -38,12 +38,12 @@ const promptQuestions = () => {
     {
       type: 'input',
       name: 'description',
-      message: 'Please provide a brief project description.',
+      message: 'Please provide a brief project description:',
       validate: descriptionInput => {
         if (descriptionInput) {
           return true;
         } else {
-          console.log('please enter a description to continue.');
+          console.log('Enter a description to continue:');
           return false;
         }
       }
@@ -51,12 +51,12 @@ const promptQuestions = () => {
     {
       type: 'input',
       name: 'installation',
-      message: 'Please provide installation instructions.',
+      message: 'Please provide installation instructions:',
       validate: installInput => {
         if (installInput) {
           return true;
         } else {
-          console.log('Enter install instructions to continue.');
+          console.log('Enter install instructions to continue:');
           return false;
         }
       }
@@ -64,41 +64,96 @@ const promptQuestions = () => {
     {
       type: 'input',
       name: 'usage',
-      message: 'Please provide instructions on how to use the application.',
+      message: 'Please provide instructions on how to use the application:',
       validate: usageInput => {
         if (usageInput) {
           return true;
         } else {
-          console.log('Enter usage instructions to continue.');
+          console.log('Enter usage instructions to continue:');
           return false;
         }
       }
     },
     {
+      type: 'confirm',
+      name: 'confirmLicense',
+      message: 'Would you like to include licensing information?',
+      default: true
+    },
+    {
       type: 'checkbox',
       name: 'license',
       message: 'Which license applies to your project?',
-      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense', 'Not applicable']
+      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense', 'Not applicable'],
+      when: ({ confirmLicense }) => {
+        if (confirmLicense) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    },
+    {
+      type: 'confirm',
+      name: 'confirmContributors',
+      message: 'Would you like to include contributor information?',
+      default: true
     },
     {
       type: 'input',
       name: 'contributing',
-      message: 'Please provide the names of contributors.',
+      message: 'Please provide the names of contributors:',
+      when: ({ confirmContributors }) => {
+        if (confirmContributors) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    },
+    {
+      type: 'confirm',
+      name: 'confirmTest',
+      message: 'Would you like to include testing information?',
+      default: true
     },
     {
       type: 'input',
       name: 'tests',
-      message: 'Please provide instructions for testing.',
+      message: 'Please provide instructions for testing:',
+      when: ({ confirmTest }) => {
+        if (confirmTest) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
     {
       type: 'input',
       name: 'github',
-      message: 'Please provide GitHub username.',
+      message: 'Please provide GitHub username:',
+      validate: githubInput => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log('Enter github username to continue:');
+          return false;
+        }
+      }
     },
         {
       type: 'input',
       name: 'email',
-      message: 'Please provide email for contact.',
+      message: 'Please provide email for contact:',
+      validate: emailInput => {
+        if (emailInput) {
+          return true;
+        } else {
+          console.log('Enter an email address to continue:');
+          return false;
+        }
+      }
     },
     ]
   )
