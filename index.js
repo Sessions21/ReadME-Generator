@@ -1,15 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-// const fs = require('fs');
-// const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// const pageMD = generateMarkdown(title, description);
 
-// fs.writeFile('./ReadME.md', pageMD, err => {
-//   if (err) throw err;
-
-//   console.log('ReadME complete! Check out ReadME.md to see the output!')
-// });
 
 
 
@@ -167,4 +161,13 @@ const promptQuestions = () => {
 // }
 
 // // Function call to initialize app
-promptQuestions().then(answers => console.log(answers));
+promptQuestions()
+  .then(readMeData => {
+    const pageMD = generateMarkdown(readMeData);
+    
+    // fs.writeFile('./ReadME.md', pageMD, err => {
+    //   if (err) throw err;
+
+    //   console.log('ReadME complete! Check out ReadME.md to see the output!')
+    // });
+  });
