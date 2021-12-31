@@ -17,6 +17,33 @@ const generateMarkdown = (title, description) => {
   return `# ${title}
 ## Description 
   ${description}
+
+## Table of Contents:
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+## Installation
+  ${installation}
+
+## Usage
+  ${usage}
+
+## License
+  ${license}
+
+## Contributing
+  ${contributing}
+
+## Tests
+  ${tests}
+
+### Questions
+* Github Profile: https://github.com/${github}
+* Contact me with questions: ${email}
 `;
 };
 
