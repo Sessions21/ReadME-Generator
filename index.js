@@ -78,7 +78,7 @@ const promptQuestions = () => {
       type: 'checkbox',
       name: 'license',
       message: 'Which license applies to your project?',
-      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense', 'Not applicable'],
+      choices: ['GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense'],
       when: ({ confirmLicense }) => {
         if (confirmLicense) {
           return true;
