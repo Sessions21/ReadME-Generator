@@ -8,12 +8,12 @@ const licenseBadge = {
 };
 
 const licenseLink = {
-  "GNU GPLv3": "!['Link to GNU GPLv3 Details'](https://choosealicense.com/licenses/gpl-3.0/)",
-  "Mozilla Public License 2.0": "!['Link to Mozilla Public License 2.0 Details'](https://choosealicense.com/licenses/mpl-2.0/)",
-  "Apache License 2.0": "!['Link to Apache License 2.0 Details'](https://choosealicense.com/licenses/apache-2.0/)",
-  "MIT License": "!['Link to MIT License Details'](https://choosealicense.com/licenses/mit/)",
-  "Boost Software License 1.0": "!['Link to Boost Software License 1.0 Details'](https://choosealicense.com/licenses/bsl-1.0/)",
-  "The Unilicense": "![Link to The Unilicense Details'](https://choosealicense.com/licenses/unlicense/)"
+  "GNU GPLv3": "[Link to GNU GPLv3 Details](https://choosealicense.com/licenses/gpl-3.0/)",
+  "Mozilla Public License 2.0": "[Link to Mozilla Public License 2.0 Details](https://choosealicense.com/licenses/mpl-2.0/)",
+  "Apache License 2.0": "[Link to Apache License 2.0 Details](https://choosealicense.com/licenses/apache-2.0/)",
+  "MIT License": "[Link to MIT License Details](https://choosealicense.com/licenses/mit/)",
+  "Boost Software License 1.0": "[Link to Boost Software License 1.0 Details](https://choosealicense.com/licenses/bsl-1.0/)",
+  "The Unilicense": "[Link to The Unilicense Details](https://choosealicense.com/licenses/unlicense/)"
 };
 
 
