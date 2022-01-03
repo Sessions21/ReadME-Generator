@@ -5,6 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // TODO: Create a function to initialize app
+
 const promptQuestions = () => {
   return inquirer.prompt([
     {
@@ -68,7 +69,7 @@ const promptQuestions = () => {
     {
       type: 'checkbox',
       name: 'license',
-      message: 'Which license applies to your project? Select One',
+      message: 'Which license applies to your project? Select Only One',
       choices: ['GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unilicense'],
       when: ({ confirmLicense }) => {
         if (confirmLicense) {
@@ -78,7 +79,7 @@ const promptQuestions = () => {
         }
       },
       validate: licenseInput => {
-        if (licenseInput) {
+        if (licenseInput && licenseInput.length === 1) {
           return true;
         } else {
           console.log('Pick License to continue:');
