@@ -40,13 +40,21 @@
   No tests included for this application.
 
 ## Contributing
-  Scott Nichols
+  * Scott Nichols
 
  ---------------------------------
 ### Questions
 * Github Profile: https://github.com/sessions21
 * Contact me with questions: s21nichols@hotmail.com
-* Link to video walk through: 
+* Link to video walk through: https://www.awesomescreenshot.com/video/6682095?key=25c21447b5c06c71e25ccb7d34887590
 
+### Example Output:
+ * **With a License & Badge Section**
 ![ReadMe Output Example-1](./utils/images/ReadMe-Generator-Example-1.jpg)
 ![ReadMe Output Example-2](./utils/images/ReadMe-Generator-Example-2.jpg)
+
+ ----------------------------------
+
+ * **Without a License or Badge Section**
+![ReadMe Output Example-1](./utils/images/ReadMe-Generator-Example-without-license-section-1.jpg)
+![ReadMe Output Example-2](./utils/images/ReadMe-Generator-Example-without-license-section-2.jpg)

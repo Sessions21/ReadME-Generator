@@ -37,7 +37,7 @@ const renderLicenseLink = (license) => {
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => {
   if (!license) return ' ';
-  return `## License Details:
+  return `## License
   ${renderLicenseLink(license)}`
 };
 
