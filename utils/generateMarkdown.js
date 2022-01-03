@@ -1,3 +1,5 @@
+
+// Badge object that captures input and displays badge icon
 const licenseBadge = {
   "GNU GPLv3": "![License: 'GNU GPLv3'](https://img.shields.io/badge/License-GNU%20GPLv3-yellowgreen)",
   "Mozilla Public License 2.0": "![License: 'Mozilla Public License 2.0'](https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-blue)",
@@ -7,6 +9,7 @@ const licenseBadge = {
   "The Unilicense": "![License: 'The Unilicense'](https://img.shields.io/badge/License-The%20Unilicense-orange)"
 };
 
+// Links object to provide links to license details
 const licenseLink = {
   "GNU GPLv3": "[Link to GNU GPLv3 Details](https://choosealicense.com/licenses/gpl-3.0/)",
   "Mozilla Public License 2.0": "[Link to Mozilla Public License 2.0 Details](https://choosealicense.com/licenses/mpl-2.0/)",

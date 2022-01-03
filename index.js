@@ -174,7 +174,7 @@ const promptQuestions = () => {
 promptQuestions()
   .then((data) => {
     const pageMD = generateMarkdown(data);
-    fs.writeFile('./ReadME.md', pageMD, err => {
+    fs.writeFile('./Example-ReadME.md', pageMD, err => {
       if (err) throw err;
 
       console.log('ReadME complete! Check out ReadME.md to see the output!')
